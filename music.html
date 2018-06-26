@@ -1,0 +1,12 @@
+<!doctype html>
+<head></head>
+<body>
+  <script>
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET","/neteasemusic/cate.json");
+    xhr.send();
+    xhr.onload = function () {
+        console.log(JSON.parse(xhr.responseText));
+    }
+  </script>
+</body>
